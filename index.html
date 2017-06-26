@@ -7,18 +7,13 @@
       <meta name = "apple-mobile-web-app-capable" content = "yes" />
       <meta name = "apple-mobile-web-app-status-bar-style" content = "black" />
       <title>My App</title>
-      <link rel = "stylesheet" 
-         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.material.min.css" />
-      <link rel = "stylesheet" 
-         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.material.colors.min.css" />
-<<<<<<< HEAD
+     
 		 <style>
 		 body{
 		 background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 		 }
 		 </style>
-=======
->>>>>>> 2402ed8a602f38083f65f0502e4198773d9ed98b
+
    </head>
    
    <body>
@@ -74,36 +69,7 @@
          </div>
       </div>
       
-      <script type = "text/javascript" 
-         src = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
-      
-      <script>
-         // here initialize the app
-         var myApp = new Framework7();
-
-         // If your using custom DOM library, then save it to $$ variable
-         var $$ = Dom7;
-
-         // Add the view
-         var mainView = myApp.addView('.view-main', {
-            
-            // enable the dynamic navbar for this view:
-            dynamicNavbar: true
-         });
-
-         //use the 'pageInit' event handler for all pages
-         $$(document).on('pageInit', function (e) {
-         
-            //get page data from event data
-            var page = e.detail.page;
-
-            if (page.name === 'blog') {
-            
-               // you will get below message in alert box when page with data-page attribute is equal to "about"
-               myApp.alert('Here its your About page');
-            }
-         })
-      </script>
+    
    </body>
 
 </html>
