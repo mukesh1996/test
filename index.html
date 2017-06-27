@@ -10,10 +10,10 @@
      app.controller('myCtrl', function($scope,$http) {
     	 $http({
     	      method: 'GET',
-    	      url: 'http://localhost:8181/Angular/view'
+    	      url: 'https://www.w3schools.com/angular/customers.php'
     	   }).then(function (response){
                     var data = response.data;
-                    $scope.user = data;
+                    $scope.user = data.records;
                     console.log(data);
     	   })
 	 	        
@@ -28,9 +28,9 @@
 <th>Mobile No</th>
 </tr>
 <tr ng-repeat="x in user">
-<td>{{x.name}}</td>
-<td>{{x.address}}</td>
-<td>{{x.mobileNo}}</td>
+<td>{{x.Name}}</td>
+<td>{{x.City}}</td>
+<td>{{x.Country}}</td>
 </tr>
 </table>
 </body>
